@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D0F0F33F-250A-42EF-AB07-4B4AB50BB3B6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Mindscape.Raygun4Net</RootNamespace>
+    <AssemblyName>Mindscape.Raygun4Net.Xamarin</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;SIMPLE_JSON_NO_LINQ_EXPRESSION</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <DefineConstants>SIMPLE_JSON_NO_LINQ_EXPRESSION</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="..\..\Mindscape.Raygun4Net\SimpleJson.cs">
+      <Link>SimpleJson.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Mindscape.Raygun4Net\Messages\RaygunClientMessage.cs">
+      <Link>Messages\RaygunClientMessage.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Mindscape.Raygun4Net\Messages\RaygunErrorMessage.cs">
+      <Link>Messages\RaygunErrorMessage.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Mindscape.Raygun4Net\Messages\RaygunErrorStackTraceLineMessage.cs">
+      <Link>Messages\RaygunErrorStackTraceLineMessage.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Mindscape.Raygun4Net\Messages\RaygunMessage.cs">
+      <Link>Messages\RaygunMessage.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Mindscape.Raygun4Net\Messages\RaygunMessageDetails.cs">
+      <Link>Messages\RaygunMessageDetails.cs</Link>
+    </Compile>
+    <Compile Include="RaygunSettings.Xamarin.cs" />
+    <Compile Include="RaygunClient.Xamarin.cs" />
+    <Compile Include="Messages\RaygunEnvironmentMessage.Xamarin.cs" />
+    <Compile Include="Messages\RaygunRequestMessage.Xamarin.cs" />
+    <Compile Include="RaygunMessageBuilder.Xamarin.cs" />
+    <Compile Include="IRaygunMessageBuilder.cs" />
+    <Compile Include="IRaygunPlatform.Xamarin.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Messages\" />
+  </ItemGroup>
+</Project>
