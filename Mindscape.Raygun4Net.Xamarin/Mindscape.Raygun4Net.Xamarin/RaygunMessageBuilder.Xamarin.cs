@@ -74,6 +74,13 @@ namespace Mindscape.Raygun4Net
 		
 		public IRaygunMessageBuilder SetVersion()
 		{
+
+			if (!string.IsNullOrEmpty(_raygunMessage.Details.Environment.PackageVersion))
+			{
+				_raygunMessage.Details.Version = _raygunMessage.Details.Environment.PackageVersion;
+				return this;
+			}
+
 			var entryAssembly = Assembly.GetEntryAssembly();
 			if (entryAssembly != null)
 			{

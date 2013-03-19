@@ -72,14 +72,12 @@
     <Compile Include="..\Mindscape.Raygun4Net.Xamarin\RaygunSettings.Xamarin.cs">
       <Link>RaygunSettings.Xamarin.cs</Link>
     </Compile>
-    <Compile Include="..\Mindscape.Raygun4Net.Xamarin\Messages\RaygunEnvironmentMessage.Xamarin.cs">
-      <Link>Messages\RaygunEnvironmentMessage.Xamarin.cs</Link>
-    </Compile>
     <Compile Include="..\Mindscape.Raygun4Net.Xamarin\Messages\RaygunRequestMessage.Xamarin.cs">
       <Link>Messages\RaygunRequestMessage.Xamarin.cs</Link>
     </Compile>
     <Compile Include="..\Mindscape.Raygun4Net.Xamarin\IRaygunMessageBuilder.cs">
       <Link>IRaygunMessageBuilder.cs</Link>
     </Compile>
+    <Compile Include="Messages\RaygunEnvironmentMessage.iOS.cs" />
   </ItemGroup>
 </Project>

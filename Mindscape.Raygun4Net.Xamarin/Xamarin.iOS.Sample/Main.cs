@@ -4,6 +4,7 @@ using System.Linq;
 
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
+using Mindscape.Raygun4Net;
 
 namespace Xamarin.iOS.Sample
 {
@@ -14,6 +15,12 @@ namespace Xamarin.iOS.Sample
 		{
 			// if you want to use a different Application Delegate class from "AppDelegate"
 			// you can specify it here.
+
+			AppDomain.CurrentDomain.UnhandledException += (object sender, UnhandledExceptionEventArgs e) => {
+				if (e.ExceptionObject is Exception)
+					new RaygunClient().Send(e.ExceptionObject as Exception);
+			};
+
 			UIApplication.Main (args, null, "AppDelegate");
 		}
 	}

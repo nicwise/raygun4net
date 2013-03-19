@@ -34,6 +34,12 @@ namespace Xamarin.iOS.Sample
 			vc.View.BackgroundColor = UIColor.White;
 			vc.NavigationItem.RightBarButtonItem = new UIBarButtonItem(UIBarButtonSystemItem.Done, delegate {
 				new RaygunClient().Send(new Exception("From iOS??"));
+
+			});
+
+			vc.NavigationItem.LeftBarButtonItem = new UIBarButtonItem("Crash", UIBarButtonItemStyle.Plain, delegate {
+				throw new Exception("This should kill the app");
+				
 			});
 
 			viewController = new UINavigationController(vc);

@@ -9,15 +9,25 @@ using System.Text;
 
 
 
+
 namespace Mindscape.Raygun4Net.Messages
 {
+
+
+
 	public class RaygunEnvironmentMessage
 	{
 		private List<double> _diskSpaceFree = new List<double>();
 		
 		public RaygunEnvironmentMessage()
 		{
+
+	
 			/*
+
+
+
+
 			ProcessorCount = Environment.ProcessorCount;
 			
 
