@@ -19,8 +19,7 @@ namespace Xamarin.Android.Sample
 		{
 			base.OnCreate (bundle);
 
-
-			RaygunSettings.Settings.ApiKey = "VYZuTHHojdXvpuhWPQcesA==";
+			RaygunClient.SetupRaygun("VYZuTHHojdXvpuhWPQcesA==");
 
 
 			// Set our view from the "main" layout resource
@@ -34,9 +33,12 @@ namespace Xamarin.Android.Sample
 			{
 
 				new RaygunClient().Send(new Exception("From Android??"));
-
-
 				button.Text = string.Format ("{0} errors logged!", count++);
+			};
+
+			var crashButton = FindViewById<Button>(Resource.Id.crashButton);
+			crashButton.Click += delegate {
+				throw new Exception("This should explode the Android device");
 			};
 		}
 	}

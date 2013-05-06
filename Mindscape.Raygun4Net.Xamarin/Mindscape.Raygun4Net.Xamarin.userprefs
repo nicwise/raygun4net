@@ -1,27 +1,24 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.Crania" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Xamarin.iOS.Sample/AppDelegate.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Mindscape.Raygun4Net.Xamarin/RaygunClient.Xamarin.cs">
     <Files>
-      <File FileName="Xamarin.iOS.Sample/AppDelegate.cs" Line="50" Column="32" />
-      <File FileName="Xamarin.iOS.Sample/Main.cs" Line="1" Column="1" />
-      <File FileName="Mindscape.Raygun4Net.Xamarin/RaygunClient.Xamarin.cs" Line="135" Column="21" />
-      <File FileName="Mindscape.Raygun4Net.Xamarin/RaygunMessageBuilder.Xamarin.cs" Line="81" Column="17" />
-      <File FileName="Mindscape.Raygun4Net.Xamarin/Messages/RaygunEnvironmentMessage.Xamarin.cs" Line="18" Column="39" />
-      <File FileName="Mindscape.Raygun4Net.XamariniOS/Messages/RaygunEnvironmentMessage.iOS.cs" Line="147" Column="4" />
-      <File FileName="../Mindscape.Raygun4Net/Messages/RaygunMessage.cs" Line="1" Column="1" />
-      <File FileName="../Mindscape.Raygun4Net/Messages/RaygunMessageDetails.cs" Line="1" Column="1" />
+      <File FileName="Xamarin.Android.Sample/MainActivity.cs" Line="22" Column="23" />
+      <File FileName="Mindscape.Raygun4Net.Xamarin/RaygunClient.Xamarin.cs" Line="37" Column="38" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Option id="ShowAllFiles" value="True" />
+          <Node name="Android" expanded="True">
+            <Node name="Xamarin.Android.Sample" expanded="True" selected="True">
+              <Node name="Assets" expanded="True" />
+              <Node name="Resources" expanded="True">
+                <Node name="drawable" expanded="True" />
+                <Node name="layout" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
           <Node name="iOS" expanded="True">
-            <Node name="Mindscape.Raygun4Net.XamariniOS" expanded="True">
-              <Node name="Messages" expanded="True" />
-            </Node>
-            <Node name="Xamarin.iOS.Sample" expanded="True">
-              <Node name="AppDelegate.cs" selected="True" />
-            </Node>
+            <Node name="Xamarin.iOS.Sample" expanded="True" />
           </Node>
           <Node name="Mindscape.Raygun4Net.Xamarin" expanded="True">
             <Node name="Messages" expanded="True" />
@@ -48,5 +45,5 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Android.Xamarin.Android.Sample AndroidDeviceId-Debug="emulator-5554" />
+  <MonoDevelop.Ide.ItemProperties.Android.Xamarin.Android.Sample AndroidDeviceId-Debug="emulator-5554" MonoForAntroid.PreferredDevice="3.7in WVGA (Nexus One)" AndroidDeviceId-Release="007160780aa675bd" />
 </Properties>

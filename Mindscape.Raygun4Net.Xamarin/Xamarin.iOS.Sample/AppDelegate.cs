@@ -28,8 +28,6 @@ namespace Xamarin.iOS.Sample
 		{
 			window = new UIWindow (UIScreen.MainScreen.Bounds);
 
-			RaygunSettings.Settings.ApiKey = "VYZuTHHojdXvpuhWPQcesA==";
-
 			var vc = new UIViewController();
 			vc.View.BackgroundColor = UIColor.White;
 			vc.NavigationItem.RightBarButtonItem = new UIBarButtonItem(UIBarButtonSystemItem.Done, delegate {

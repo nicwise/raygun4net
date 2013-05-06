@@ -16,10 +16,7 @@ namespace Xamarin.iOS.Sample
 			// if you want to use a different Application Delegate class from "AppDelegate"
 			// you can specify it here.
 
-			AppDomain.CurrentDomain.UnhandledException += (object sender, UnhandledExceptionEventArgs e) => {
-				if (e.ExceptionObject is Exception)
-					new RaygunClient().Send(e.ExceptionObject as Exception);
-			};
+			RaygunClient.SetupRaygun("VYZuTHHojdXvpuhWPQcesA==");
 
 			UIApplication.Main (args, null, "AppDelegate");
 		}

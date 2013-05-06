@@ -5,6 +5,8 @@ using System.Net;
 using Mindscape.Raygun4Net.Messages;
 
 using System.Threading;
+using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace Mindscape.Raygun4Net
 {
@@ -38,6 +40,29 @@ namespace Mindscape.Raygun4Net
 				return false;
 			}
 			return true;
+		}
+
+
+		public static void SetupRaygun(string _apiKey)
+		{
+
+			RaygunSettings.Settings.ApiKey = _apiKey;
+
+			AppDomain.CurrentDomain.UnhandledException += (object sender, UnhandledExceptionEventArgs e) => 
+			{
+				if (e.ExceptionObject is Exception)
+				{
+					new RaygunClient().Send(e.ExceptionObject as Exception);
+				}
+			};
+
+			TaskScheduler.UnobservedTaskException += (object sender, UnobservedTaskExceptionEventArgs e) => 
+			{
+				if (e.Exception != null)
+				{
+					new RaygunClient().Send (e.Exception as Exception);
+				}
+			};
 		}
 		
 

@@ -115,6 +115,6 @@ Global
 		{0469B395-815B-4444-800B-DCA2052E4FA5} = {A256D8E2-4EB0-48DA-ABBD-98BF0A53FFAC}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Xamarin.iOS.Sample\Xamarin.iOS.Sample.csproj
+		StartupItem = Xamarin.Android.Sample\Xamarin.Android.Sample.csproj
 	EndGlobalSection
 EndGlobal
