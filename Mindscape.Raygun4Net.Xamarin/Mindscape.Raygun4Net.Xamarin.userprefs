@@ -1,15 +1,21 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Mindscape.Raygun4Net.Xamarin/RaygunClient.Xamarin.cs">
     <Files>
-      <File FileName="Xamarin.Android.Sample/MainActivity.cs" Line="22" Column="23" />
-      <File FileName="Mindscape.Raygun4Net.Xamarin/RaygunClient.Xamarin.cs" Line="37" Column="38" />
+      <File FileName="Xamarin.Android.Sample/MainActivity.cs" Line="22" Column="22" />
+      <File FileName="Mindscape.Raygun4Net.XamarinAndroid/Messages/RaygunEnvironmentMessage.Android.cs" Line="18" Column="2" />
+      <File FileName="../Mindscape.Raygun4Net/Messages/RaygunMessageDetails.cs" Line="14" Column="12" />
+      <File FileName="Mindscape.Raygun4Net.Xamarin/RaygunClient.Xamarin.cs" Line="55" Column="62" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Android" expanded="True">
-            <Node name="Xamarin.Android.Sample" expanded="True" selected="True">
+            <Node name="Mindscape.Raygun4Net.XamarinAndroid" expanded="True">
+              <Node name="Messages" expanded="True" />
+              <Node name="RaygunClient.Xamarin.cs" selected="True" />
+            </Node>
+            <Node name="Xamarin.Android.Sample" expanded="True">
               <Node name="Assets" expanded="True" />
               <Node name="Resources" expanded="True">
                 <Node name="drawable" expanded="True" />
@@ -18,10 +24,9 @@
             </Node>
           </Node>
           <Node name="iOS" expanded="True">
-            <Node name="Xamarin.iOS.Sample" expanded="True" />
-          </Node>
-          <Node name="Mindscape.Raygun4Net.Xamarin" expanded="True">
-            <Node name="Messages" expanded="True" />
+            <Node name="Mindscape.Raygun4Net.XamariniOS" expanded="True">
+              <Node name="Messages" expanded="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
@@ -45,5 +50,5 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Android.Xamarin.Android.Sample AndroidDeviceId-Debug="emulator-5554" MonoForAntroid.PreferredDevice="3.7in WVGA (Nexus One)" AndroidDeviceId-Release="007160780aa675bd" />
+  <MonoDevelop.Ide.ItemProperties.Android.Xamarin.Android.Sample AndroidDeviceId-Debug="emulator-5554" MonoForAntroid.PreferredDevice="3.7in WVGA (Nexus One)" AndroidDeviceId-Release="emulator-5554" />
 </Properties>

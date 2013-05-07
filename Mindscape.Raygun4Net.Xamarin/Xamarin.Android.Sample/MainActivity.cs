@@ -19,7 +19,7 @@ namespace Xamarin.Android.Sample
 		{
 			base.OnCreate (bundle);
 
-			RaygunClient.SetupRaygun("VYZuTHHojdXvpuhWPQcesA==");
+			RaygunClient.SetupRaygun(this, "VYZuTHHojdXvpuhWPQcesA==");
 
 
 			// Set our view from the "main" layout resource

@@ -8,6 +8,13 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Diagnostics;
 
+
+#if ANDROID
+using Android.Content;
+using Android.Content.PM;
+using Android.Util;
+#endif
+
 namespace Mindscape.Raygun4Net
 {
 	public class RaygunClient
@@ -42,10 +49,24 @@ namespace Mindscape.Raygun4Net
 			return true;
 		}
 
+		public static string PackageVersion = "unknown";
 
+#if ANDROID
+		public static void SetupRaygun(Context ctx, string _apiKey)
+		{
+
+			PackageManager manager = ctx.PackageManager;
+			PackageInfo info = manager.GetPackageInfo (ctx.PackageName, 0);
+			PackageVersion = info.VersionCode + " / " + info.VersionName;
+
+
+#else
 		public static void SetupRaygun(string _apiKey)
 		{
 
+			
+
+#endif
 			RaygunSettings.Settings.ApiKey = _apiKey;
 
 			AppDomain.CurrentDomain.UnhandledException += (object sender, UnhandledExceptionEventArgs e) => 

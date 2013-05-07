@@ -20,7 +20,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug</OutputPath>
-    <DefineConstants>DEBUG;</DefineConstants>
+    <DefineConstants>DEBUG;ANDROID</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidLinkMode>None</AndroidLinkMode>
@@ -35,6 +35,7 @@
     <ConsolePause>false</ConsolePause>
     <AndroidLinkMode>SdkOnly</AndroidLinkMode>
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <DefineConstants>ANDROID</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -44,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Messages\RaygunEnvironmentMessage.Android.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -86,9 +88,6 @@
     </Compile>
     <Compile Include="..\Mindscape.Raygun4Net.Xamarin\RaygunSettings.Xamarin.cs">
       <Link>RaygunSettings.Xamarin.cs</Link>
-    </Compile>
-    <Compile Include="..\Mindscape.Raygun4Net.Xamarin\Messages\RaygunEnvironmentMessage.Xamarin.cs">
-      <Link>Messages\RaygunEnvironmentMessage.Xamarin.cs</Link>
     </Compile>
     <Compile Include="..\Mindscape.Raygun4Net.Xamarin\Messages\RaygunRequestMessage.Xamarin.cs">
       <Link>Messages\RaygunRequestMessage.Xamarin.cs</Link>
