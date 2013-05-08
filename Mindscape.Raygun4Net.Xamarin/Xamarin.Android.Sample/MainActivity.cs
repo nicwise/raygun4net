@@ -31,7 +31,6 @@ namespace Xamarin.Android.Sample
 			
 			button.Click += delegate
 			{
-
 				new RaygunClient().Send(new Exception("From Android??"));
 				button.Text = string.Format ("{0} errors logged!", count++);
 			};

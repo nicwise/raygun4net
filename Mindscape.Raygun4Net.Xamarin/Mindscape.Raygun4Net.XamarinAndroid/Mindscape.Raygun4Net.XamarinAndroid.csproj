@@ -77,9 +77,6 @@
     <Compile Include="..\..\Mindscape.Raygun4Net\Messages\RaygunMessageDetails.cs">
       <Link>Messages\RaygunMessageDetails.cs</Link>
     </Compile>
-    <Compile Include="..\Mindscape.Raygun4Net.Xamarin\IRaygunPlatform.Xamarin.cs">
-      <Link>IRaygunPlatform.Xamarin.cs</Link>
-    </Compile>
     <Compile Include="..\Mindscape.Raygun4Net.Xamarin\RaygunClient.Xamarin.cs">
       <Link>RaygunClient.Xamarin.cs</Link>
     </Compile>

@@ -60,7 +60,8 @@ namespace Mindscape.Raygun4Net
 			PackageVersion = info.VersionCode + " / " + info.VersionName;
 
 
-#else
+#endif
+#if IOS
 		public static void SetupRaygun(string _apiKey)
 		{
 

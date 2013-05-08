@@ -59,13 +59,6 @@ namespace Mindscape.Raygun4Net
 			return this;
 		}
 
-		public IRaygunMessageBuilder SetPlatformDetails(IRaygunPlatform platform)
-		{
-			platform.Ingest(_raygunMessage.Details);
-			return this;
-		}
-
-		
 		public IRaygunMessageBuilder SetUserCustomData(IDictionary userCustomData)
 		{
 			_raygunMessage.Details.UserCustomData = userCustomData;
