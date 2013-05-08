@@ -1,28 +1,14 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../Mindscape.Raygun4Net/SimpleJson.cs">
-    <Files>
-      <File FileName="Xamarin.Android.Sample/MainActivity.cs" Line="40" Column="38" />
-      <File FileName="Mindscape.Raygun4Net.XamarinAndroid/Messages/RaygunEnvironmentMessage.Android.cs" Line="1" Column="1" />
-      <File FileName="../Mindscape.Raygun4Net/Messages/RaygunMessageDetails.cs" Line="14" Column="12" />
-      <File FileName="Mindscape.Raygun4Net.Xamarin/RaygunClient.Xamarin.cs" Line="90" Column="4" />
-      <File FileName="../Mindscape.Raygun4Net/Messages/RaygunClientMessage.cs" Line="1" Column="1" />
-      <File FileName="../Mindscape.Raygun4Net/Messages/RaygunErrorMessage.cs" Line="1" Column="1" />
-      <File FileName="../Mindscape.Raygun4Net/Messages/RaygunErrorStackTraceLineMessage.cs" Line="1" Column="1" />
-      <File FileName="../Mindscape.Raygun4Net/Messages/RaygunMessage.cs" Line="1" Column="1" />
-      <File FileName="Mindscape.Raygun4Net.Xamarin/Messages/RaygunRequestMessage.Xamarin.cs" Line="1" Column="1" />
-      <File FileName="Mindscape.Raygun4Net.Xamarin/IRaygunMessageBuilder.cs" Line="1" Column="1" />
-      <File FileName="Mindscape.Raygun4Net.Xamarin/IRaygunPlatform.Xamarin.cs" Line="6" Column="28" />
-      <File FileName="Mindscape.Raygun4Net.Xamarin/RaygunMessageBuilder.Xamarin.cs" Line="61" Column="3" />
-      <File FileName="Mindscape.Raygun4Net.Xamarin/RaygunSettings.Xamarin.cs" Line="1" Column="1" />
-      <File FileName="../Mindscape.Raygun4Net/SimpleJson.cs" Line="1" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Android" expanded="True">
             <Node name="Mindscape.Raygun4Net.XamarinAndroid" expanded="True">
-              <Node name="Messages" expanded="True" />
+              <Node name="Messages" expanded="True">
+                <Node name="RaygunErrorStackTraceLineMessage.cs" selected="True" />
+              </Node>
             </Node>
             <Node name="Xamarin.Android.Sample" expanded="True">
               <Node name="Assets" expanded="True" />
@@ -35,7 +21,6 @@
           <Node name="iOS" expanded="True">
             <Node name="Mindscape.Raygun4Net.XamariniOS" expanded="True">
               <Node name="Messages" expanded="True" />
-              <Node name="IRaygunMessageBuilder.cs" selected="True" />
             </Node>
           </Node>
         </State>
